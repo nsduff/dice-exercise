@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Place your bets!!!</h1>
+      <div class="balance-sheet">
+        <input type="number" class="balance" value="1000" readonly />
+      </div>
+      <input type="number" class="bet" value="" />
+      <fieldset>
+        <div class="radio">
+          <div class="label">
+            <input name="bet" type="radio" id="over" value="evenOver" />
+            <label for id="over">Even-Over</label>
+          </div>
+          <div class="label">
+            <input name="bet" type="radio" id="odd" value="odd" />
+            <label for id="odd">Odd</label>
+          </div>
+          <div class="label">
+            <input name="bet" type="radio" id="under" value="under" />
+            <label for id="under">Even-Under</label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="container--dice">
+        <span class="three" , id="die1"></span>
+        <span class="four" , id="die2"></span>
+      </div>
+      <button onclick="diceRoll()">Roll them bones</button>
+    </div>
+  </body>
+</html>
